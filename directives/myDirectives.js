@@ -12,11 +12,20 @@ courseRoster.directive("changeClass", function() {
     }
 });
 
+// courseRoster.directive("sampleCourse", function() {
+//     return {
+//         scope: {
+//             details: '@'
+//         },
+//         template: '<div>{{details}} Details</div>'
+//     }
+// });
+
 courseRoster.directive("sampleCourse", function() {
     return {
-        template: 'almost right details'
-        // link: function (scope) {
-        //     scope.details = "Right Details";
-        }
-
+        scope: {
+            details: '@'
+        },
+        template: '<div>{{details}} Details</div>'
+    }
 });
