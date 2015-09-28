@@ -24,7 +24,7 @@ courseRoster.config(function($stateProvider) {
             },
             'body': {
                 templateUrl: "partials/courses.html",
-                controller: "CoursesCtrl"
+                controller: "CoursesCtrl",
             },
         }
     });
@@ -40,7 +40,29 @@ courseRoster.config(function($stateProvider) {
                 templateUrl: "partials/courses.students.html",
                 controller: 'StudentsCtrl'
             },
+            // 'details': {
+            //     templateUrl: 'partials/courses.details.html',
+            //     controller: 'CoursesCtrl',
+            // },
         }
     });
+
+    // $stateProvider.state('courses.details', {
+    //     url: "/:courseId",
+    //     views: {
+    //         'header': {
+    //             templateUrl: 'partials/header.html',
+    //             controller: 'HeadersCtrl',
+    //         },
+    //         'body': {
+    //             templateUrl: "partials/courses.html",
+    //             controller: 'CoursesCtrl'
+    //         },
+    //         'details': {
+    //             templateUrl: 'partials/courses.details.html',
+    //             controller: 'CoursesCtrl',
+    //         },
+    //     }
+    // });
 
 });
